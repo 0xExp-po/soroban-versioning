@@ -91,7 +91,7 @@ const DonateModal: FC<Props> = ({ children }) => {
               {/* Amount Input */}
               <div className="flex flex-col gap-[18px]">
                 <p className="text-base font-[600] text-primary">Contribute</p>
-                <div className="w-full flex-grow flex border border-[#978AA1]">
+                <div className="w-full flex-grow flex border border-border">
                   <input
                     ref={amountInputRef}
                     className="flex-grow p-[18px] outline-none"
@@ -130,7 +130,7 @@ const DonateModal: FC<Props> = ({ children }) => {
                   Say Something to Support the Project (optional)
                 </p>
                 <textarea
-                  className="p-[18px] w-full border border-[#978AA1] outline-none"
+                  className="p-[18px] w-full border border-border outline-none"
                   placeholder="Write your message here"
                   value={donateMessage}
                   onChange={(e) => setDonateMessage(e.target.value)}
@@ -147,7 +147,7 @@ const DonateModal: FC<Props> = ({ children }) => {
                     <img src="/icons/info.svg" alt="Info" />
                   </Tooltip>
                 </div>
-                <div className="flex border border-[#978AA1]">
+                <div className="flex border border-border">
                   <input
                     ref={tipAmountInputRef}
                     className="flex-grow p-[18px] outline-none"

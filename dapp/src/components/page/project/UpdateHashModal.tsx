@@ -91,7 +91,7 @@ const UpdateHashModal = () => {
                   </p>
                   <input
                     type="text"
-                    className="p-[18px] border border-[#978AA1] outline-none"
+                    className="p-[18px] border border-border outline-none"
                     placeholder="Lastest Commit Hash"
                     value={lastestHash}
                     onChange={(e) => setLatestHash(e.target.value)}

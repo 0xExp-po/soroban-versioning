@@ -10,7 +10,7 @@ interface Props {
 const Textarea: FC<Props> = ({ className, placeholder, value, onChange }) => {
   return (
     <textarea
-      className={`p-[18px] border border-[#978AA1] outline-none ${className}`}
+      className={`p-[18px] border border-border outline-none ${className}`}
       placeholder={placeholder}
       value={value}
       onChange={onChange}

@@ -87,7 +87,7 @@ const UpdateConfigModal = () => {
                   </p>
                   <input
                     type="text"
-                    className="p-[18px] border border-[#978AA1] outline-none"
+                    className="p-[18px] border border-border outline-none"
                     placeholder="List of maintainers' addresses as G...,G..."
                     value={maintainers}
                     onChange={(e) => setMaintainers(e.target.value)}
@@ -100,7 +100,7 @@ const UpdateConfigModal = () => {
                   </p>
                   <input
                     type="url"
-                    className="p-[18px] border border-[#978AA1] outline-none"
+                    className="p-[18px] border border-border outline-none"
                     placeholder="GitHub repository URL"
                     value={configUrl}
                     onChange={(e) => setConfigUrl(e.target.value)}
@@ -113,7 +113,7 @@ const UpdateConfigModal = () => {
                   </p>
                   <input
                     type="text"
-                    className="p-[18px] border border-[#978AA1] outline-none"
+                    className="p-[18px] border border-border outline-none"
                     placeholder="Information file hash"
                     value={configHash}
                     onChange={(e) => setConfigHash(e.target.value)}

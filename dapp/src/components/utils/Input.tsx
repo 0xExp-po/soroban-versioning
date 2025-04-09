@@ -28,7 +28,7 @@ const Input: FC<Props> = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`p-[18px] border border-[#978AA1] outline-none ${className}`}
+        className={`p-[18px] border border-border outline-none ${className}`}
       />
       {description && (
         <p className="leading-[16px] text-base text-tertiary">{description}</p>
