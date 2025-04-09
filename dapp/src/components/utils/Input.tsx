@@ -18,7 +18,7 @@ const Input: FC<Props> = ({
   onChange,
 }) => {
   return (
-    <div className="flex-grow flex flex-col gap-[18px]">
+    <div className="w-full flex flex-col gap-[18px]">
       {label && (
         <p className="leading-4 text-base font-semibold text-primary">
           {label}

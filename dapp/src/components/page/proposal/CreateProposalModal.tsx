@@ -51,6 +51,7 @@ import OutcomeInput from "./OutcomeInput";
 
 import "@mdxeditor/editor/style.css";
 import { navigate } from "astro:transitions/client";
+import { AnonymousVoteToggle } from "components/utils/toggle";
 
 interface IImageFile {
   localUrl: string;
@@ -271,6 +272,10 @@ const CreateProposalModal = () => {
     }
   };
 
+  const handleAnonymousChange = (checked: boolean) => {
+    console.log("Anonymous vote changed to:", checked);
+  };
+
   if (!showModal) return <></>;
 
   return (
@@ -291,6 +296,10 @@ const CreateProposalModal = () => {
                   placeholder="Write the name"
                   value={proposalName}
                   onChange={(e) => setProposalName(e.target.value)}
+                />
+                <AnonymousVoteToggle
+                  defaultChecked={false}
+                  onChange={handleAnonymousChange}
                 />
               </div>
             </div>
